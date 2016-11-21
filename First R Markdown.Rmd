@@ -1,0 +1,66 @@
+---
+title: "First R Markdown"
+author: "CC"
+date: "November 20, 2016"
+output: ioslides_presentation
+---
+
+## My new slide
+Some content
+
+
+## My title
+
+- Bullet one
+- Bullet two
+
+1. Item a
+2. Item b
+
+## My new slide 2
+
+Plain Text 
+
+*italicized text*
+
+**Bold text**
+
+`for (i %in% 1:10)`
+
+## My new slide 3
+```{r, comment="", echo=FALSE}
+head(mtcars)
+
+```
+
+## My new slide 4 
+```{r,echo=FALSE, fig.align='center',fig.cap='My AWESOME figure'}
+plot(mtcars$wt,mtcars$mpg,xlab="Weight",ylab="MPG")
+```
+
+
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Code and Output
+
+```{r}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
